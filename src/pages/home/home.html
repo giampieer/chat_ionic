@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="blue_chat">
+    <ion-title>
+      Chat
+      <ion-input placeholder="Usuario Anonimo" [(ngModel)]="username"></ion-input>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content #content padding>
+ <ion-card *ngFor="let message of messages" color="green_chat">
+   <ion-card-header>
+     {{message.nombre}} dice :
+   </ion-card-header>
+   <ion-card-content>
+     Mensaje: {{message.mensaje}}
+   </ion-card-content>
+ </ion-card>
+  <div id="content-end"></div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar >
+    <ion-input placeholder="Enviar mensaje" [(ngModel)]="message"></ion-input>
+  <ion-buttons end>
+    <button ion-button icon-right (click)="sendMessages()">
+      Enviar
+      <ion-icon name="send" ></ion-icon>
+    </button>
+
+  </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>
