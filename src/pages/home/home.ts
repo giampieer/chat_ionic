@@ -34,7 +34,7 @@ export class HomePage {
     //creamos un hijo del branch mensajes
     var messageRef=firebase.database().ref().child("mensajes");
     //envia dato al campo mensaje y nombre del db de firebase // siempres sin espacios
-    messageRef.push({mensaje: this.message,  nombre: this.username});
+    messageRef.push({mensaje: this.message, nombre: this.username});
     this.message = "";
   }
 
