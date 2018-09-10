@@ -26,9 +26,9 @@ export class HomePage {
     })
   }
   scrollToBotton() {
+    //baja automaticamente el scroll de los mensajes
     var contentend= document.getElementById("content-end").offsetTop;
     this.content.scrollTo(0, contentend, 300)
-
   }
   sendMessages() {
     //creamos un hijo del branch mensajes
@@ -37,5 +37,4 @@ export class HomePage {
     messageRef.push({mensaje: this.message, nombre: this.username});
     this.message = "";
   }
-
 }

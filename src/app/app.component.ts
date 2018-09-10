@@ -8,12 +8,12 @@ import * as firebase from 'firebase';
 
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyAlfVGPDl5rdAxEq3RaPVkvCSqNNz_6BW4",
-  authDomain: "chat-104f0.firebaseapp.com",
-  databaseURL: "https://chat-104f0.firebaseio.com",
-  projectId: "chat-104f0",
-  storageBucket: "chat-104f0.appspot.com",
-  messagingSenderId: "1006971483915"
+  apiKey: "AIzaSyAD_6K7hEnZXHn-iNIdsFaCByTQeuVc4Jo",
+  authDomain: "mobile-giampieer.firebaseapp.com",
+  databaseURL: "https://mobile-giampieer.firebaseio.com",
+  projectId: "mobile-giampieer",
+  storageBucket: "mobile-giampieer.appspot.com",
+  messagingSenderId: "243949067915"
 };
 @Component({
   templateUrl: 'app.html'
